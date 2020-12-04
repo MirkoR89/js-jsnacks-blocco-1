@@ -1,7 +1,7 @@
 //SNACK 1
 //Crea 10 oggetti che rappresentano una zucchina,indicando per ognuna varietà, peso e lunghezza. Calcola quanto pesano tutte le zucchine.
 
-var zucchine = [
+/*var zucchine = [
 {
   nome: "zucchino nero",
   peso: 10,
@@ -55,11 +55,22 @@ var zucchine = [
 ]
 
 var pesoZucchine = 0;
-  
+
 zucchine.forEach(function (item) {
     pesoZucchine += item.peso;
     console.log(pesoZucchine);
-  });
+  });*/
 
 //SNACK 2
-//Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
+//Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC).
+
+
+function reverseWord(string) {
+  var newString = "";
+  for (var i = string.length -1; i >= 0; i--) {
+    newString += string[i];
+  }
+  return newString
+}
+
+console.log(reverseWord("eletazzineigenizzatele"));

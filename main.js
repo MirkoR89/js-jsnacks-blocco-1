@@ -76,7 +76,7 @@ console.log(reverseWord("eletazzineigenizzatele"));*/
 //SNACK 3
 // Crea 10 oggetti che rappresentano una zucchina. Dividi in due array separati le zucchine che misurano meno o più di 15cm. Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
-var zucchine = [{
+/*var zucchine = [{
     nome: "zucchino nero",
     peso: 10,
     lunghezza: 13
@@ -151,4 +151,21 @@ var pesoZucchineLunghe = 0;
 zucchineLunghe.forEach(function(item) {
   pesoZucchineLunghe += item.peso;
 });
-console.log(pesoZucchineLunghe);
+console.log(pesoZucchineLunghe);*/
+
+//SNACK 4
+//Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altr es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+array1 = ["a", "b", "c"];
+array2 = [1, 2, 3];
+
+function arrayMix(arr1, arr2) {
+  mixArray = [];
+  for (i = 0; i < arr1.length; i++) {
+    mixArray.push(arr1[i]);
+    mixArray.push(arr2[i]);
+  }
+  return console.log(mixArray);
+}
+
+arrayMix (array1, array2);

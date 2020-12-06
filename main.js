@@ -156,7 +156,7 @@ console.log(pesoZucchineLunghe);*/
 //SNACK 4
 //Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altr es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
-array1 = ["a", "b", "c"];
+/*array1 = ["a", "b", "c"];
 array2 = [1, 2, 3];
 
 function arrayMix(arr1, arr2) {
@@ -168,4 +168,24 @@ function arrayMix(arr1, arr2) {
   return console.log(mixArray);
 }
 
-arrayMix (array1, array2);
+arrayMix (array1, array2);*/
+
+//SNACK 5
+//Scrivi una funzione che accetti tre argomenti: un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array). La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”.
+
+var componentiPc = ["CPU", "GPU", "RAM", "scheda di rete", "ventola", "dissipatore"];
+
+var a = 3;
+var b = 6;
+
+function between(arr, num1, num2) {
+  var newArrey =[];
+  for (var i = 0; i < arr.length; i++) {
+    if (i >= num1 && i <= num2) {
+      newArrey.push(arr[i]);
+    }
+  }
+  return console.log(newArrey);
+}
+
+between(componentiPc, a, b);
